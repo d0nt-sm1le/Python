@@ -1,0 +1,65 @@
+                                Váriaveis
+__________________________________________________________________________________
+Regras gerais:
+
+1 - Um nome de uma váriavel só pode começar com uma letra ou um sublinhado
+
+2 - Um nome de uma váriavel não pode começar com um número
+
+3 - Um nome de uma váriavel só pode conter caracteres de A-z, números de 0-9 e _
+
+4 - Os nomes das váriaveis se diferenciam quando são colocadas maiúsculas e     minusculas
+
+5 - Um nome de uma váriavel não podem ser uma palavra chave do Pythom
+
+----------------------------------------------------------------------------------
+Tipos primitivos:
+
+String (str) = tudo que está entre " " : "olá, mundo" - "hello, world!"
+Int = todo número inteiro : 1 , 90 , 0 ,-5, 199999 e etc
+Float = todo número quebrado : 0.1 , 7.6 , -1.9 , 99999.0000
+Bool = true and false
+----------------------------------------------------------------------------------
+Declarando váriaveis:
+
+Para declarar uma váriavel, só coloque o nome dela apartir das regras acima e atribua um valor a ela. Ex:
+
+x = 12
+f = 1.0
+y = "Olá, mundo!"
+b = false
+
+mas você também pode declarar elas com tipos primitivos para fazer uma syntax mais clara. ex:
+
+x = int(12)
+f = float(1.0)
+y = str("olá, mundo!")
+
+(obs: em váriaveis do tipo string você pode usar aspas simples também.)
+
+Caso você queira criar várias, váriaveis ao mesmo tempo, você pode usar a virgula para fazer uma separação. ex:
+
+
+x, y, z = "x", "y", "z"
+
+print(x, y, z)
+
+E algo interessante é criar várias variaveis com o mesmo valor!ex:
+
+x = y = z = "Hellooooo!!!"
+
+print(x, y, z)
+
+Ou você pode criar coleções:
+
+Numbers = ["1", "5", "10"]
+x, y, z = Numbers
+
+print (x, y, z)
+
+----------------------------------------------------------------------------------
+Comandos de texto com váriaveis:
+
+input(" ") = vai pedir uma informação pro úsuario, e essa informação vai ser guardada dentro da váriavel para ser usada depois.
+
+__________________________________________________________________________________

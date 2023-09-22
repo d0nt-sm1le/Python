@@ -1,0 +1,10 @@
+                                  Texto
+__________________________________________________________________________________
+Comandos básicos:
+
+# = cria um comentário e anula qualquer comando quando colocado na frente
+"""  """ = cria um comentário de várias llinhas
+
+print("") = imprime uma mensagem na tela
+print(f"{váriavel}" = formata uma váriavel dentro do texto
+__________________________________________________________________________________
