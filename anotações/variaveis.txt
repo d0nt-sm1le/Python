@@ -19,6 +19,9 @@ String (str) = tudo que está entre " " : "olá, mundo" - "hello, world!"
 Int = todo número inteiro : 1 , 90 , 0 ,-5, 199999 e etc
 Float = todo número quebrado : 0.1 , 7.6 , -1.9 , 99999.0000
 Bool = true and false
+
+(obs: use o comando "type(váriavel)" para ver o tipo primitivo de uma váriavel)
+
 ----------------------------------------------------------------------------------
 Declarando váriaveis:
 
@@ -37,12 +40,16 @@ y = str("olá, mundo!")
 
 (obs: em váriaveis do tipo string você pode usar aspas simples também.)
 
-Caso você queira criar várias, váriaveis ao mesmo tempo, você pode usar a virgula para fazer uma separação. ex:
+----------------------------------------------------------------------------------
+Váriações de declarações:
 
+Caso você queira criar várias, váriaveis ao mesmo tempo, você pode usar a virgula para fazer uma separação. ex:
 
 x, y, z = "x", "y", "z"
 
 print(x, y, z)
+
+----------------------------------------
 
 E algo interessante é criar várias variaveis com o mesmo valor!ex:
 
@@ -50,16 +57,58 @@ x = y = z = "Hellooooo!!!"
 
 print(x, y, z)
 
+----------------------------------------
+
 Ou você pode criar coleções:
 
 Numbers = ["1", "5", "10"]
 x, y, z = Numbers
 
-print (x, y, z)
+print (x, y, z) 
+
+----------------------------------------
+
+Se você declara uma váriavel no começo de um script e depois fazer uma váriavel com o mesmo nome dentro de uma função tipo "def, "int" e "elif" então 
+você estará declarando duas váriaveis diferentes. ex:
+
+x = 1
+
+if 1 > 0 :
+   x  = 0
+   print(f"O número 1 é maior que {x})
+
+
+E por último , se você colocar uma váriavel dentro do escopo "global" então ela terá um valor universal dentro do python. Fora que você pode usar ela para mudar o valor de uma váriavel dentro de uma função. ex:
+
+ex-1:
+
+def myfunc():
+  global x
+  x = "fantastic"
+
+myfunc()
+
+print("Python is " + x)
+
+----------------------------------------
+
+ex-2:
+
+x = "awesome"
+
+def myfunc():
+  global x
+  x = "fantastic"
+
+myfunc()
+
+print("Python is " + x)
 
 ----------------------------------------------------------------------------------
 Comandos de texto com váriaveis:
 
 input(" ") = vai pedir uma informação pro úsuario, e essa informação vai ser guardada dentro da váriavel para ser usada depois.
+
+f {} = o format vai chamar uma váriavel.
 
 __________________________________________________________________________________
