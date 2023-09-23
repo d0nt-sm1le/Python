@@ -19,7 +19,7 @@ Para declarar uma váriavel, só coloque o nome dela apartir das regras acima e 
 
 x = 12
 f = 1.0
-y = "Olá, mundo!"
+y = "Olá, mundo!" (obs: """ """ para criar uma váriavel com várias linhas)
 b = false
 
 mas você também pode declarar elas com tipos primitivos para fazer uma syntax mais clara. ex:
@@ -58,14 +58,17 @@ print (x, y, z)
 
 ----------------------------------------
 
-Se você declara uma váriavel no começo de um script e depois fazer uma váriavel com o mesmo nome dentro de uma função tipo "def, "int" e "elif" então 
+Se você declara uma váriavel no começo de um script e depois fazer uma váriavel com o mesmo nome dentro de uma função tipo "def, "if" e "elif" então 
 você estará declarando duas váriaveis diferentes. ex:
 
 x = 1
 
-if 1 > 0 :
-   x  = 0
-   print(f"O número 1 é maior que {x})
+if x > 0:
+    x = 0
+    print(f"1 é maior que {x}")
+else:
+    print("1 não é maior que {x}")
+
 
 
 E por último , se você colocar uma váriavel dentro do escopo "global" então ela terá um valor universal dentro do python. Fora que você pode usar ela para mudar o valor de uma váriavel dentro de uma função. ex:
@@ -73,11 +76,10 @@ E por último , se você colocar uma váriavel dentro do escopo "global" então 
 ex-1:
 
 def myfunc():
-  global x
-  x = "fantastic"
+    global x
+    x = "fantastic"
 
 myfunc()
-
 print("Python is " + x)
 
 ----------------------------------------
@@ -87,18 +89,34 @@ ex-2:
 x = "awesome"
 
 def myfunc():
-  global x
-  x = "fantastic"
+    global x
+    
+x = "fantastic"
 
 myfunc()
-
 print("Python is " + x)
 
 ----------------------------------------------------------------------------------
-Comandos de texto com váriaveis:
+Format:
 
-input(" ") = vai pedir uma informação pro úsuario, e essa informação vai ser guardada dentro da váriavel para ser usada depois.
+Podemos usar o comando format de algumas formas:
 
-f {} = o format vai chamar uma váriavel.
+1 - Podemos colocar ele dentro de um print para ele formatar uma váriavel dentro de um texto.ex:
 
+   1.2 - print(f"Finge que a próxima coisa que vai aparecer é uma váriavel {x}")
+   1.3 - print("Fingiu? muito {} !".format(x))
+
+2 - Podemos usar ele de forma que insiraa números , caracteres e váriaveis dentro de outras váriavel, mas não diretamente. ex:
+
+    2.2 - idade = 20
+          txt = "Meu nome é Félix , e tenho {} anos"
+          print(txt.format(idade))
+
+Oque ele fez ai foi pegar a váriavel "idade" e formatar dentro do colchetes a váriavel (obs: pode ser um valor qualquer) e colocou dentro da váriavel "txt".
+Esse segundo tipo de format usa um tipo ilimitado de argumentos e é colocado na ordem colocada e separado por virgulas.ex
+
+3 - vendas = "Eu quero {} dados de {} lados para {} mesa"
+    print(vendas.format("2", "20", "1")
+ 
+Você pode ordenar a ordem com que você quer que apareça com o {0}, mas só funciona com váriaveis.
 __________________________________________________________________________________

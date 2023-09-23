@@ -4,9 +4,11 @@ Comandos básicos:
 
 # = cria um comentário e anula qualquer comando quando colocado na frente
 """  """ = cria um comentário de várias llinhas
+end=" " = desfaz uma quebra de linha com oque estiver entre aspas
+\n = faz uma quebra de linha
 
-print("") = imprime uma mensagem na tela
-print(f"{váriavel}" = formata uma váriavel dentro do texto
+print(" ") = imprime uma mensagem na tela
+input(" ") = vai pedir uma informação pro úsuario, e essa informação vai ser guardada dentro da váriavel para ser usada depois.
 __________________________________________________________________________________
 Strings:
 
@@ -69,5 +71,25 @@ a.find('pulando') = manda ver quantas vezes os caracteres "pulando" aparece
 
 .split() = ocorre uma divisão onde existe espaços (cada palavra recebe uma nova indexsação)
 '-'.join(a) = faz uma junção de elementos de frases
+
+----------------------------------------------------------------------------------
+Teste de tipos:
+
+Uma saida de dados simples e parecida com que a gente viu ali em sima em geral você vai fazer o seguinte: váriavel.is
+
+Digamos que eu crie uma váriavel com nome x e queira saber algumas informações sobre ela, então eu coloco um .is na frente dela e vejo quais opções que eu tenho. ex:
+
+x = str(input("digite um valor:?")
+print(x.islower)
+
+Oque ele está fazendo aqui é verificando se todas as letras digitadas pelo úsuario ou números são minusculas, se sim ele retornara True e se não ele retorna False.E esses aqui são os principais comandos dessa função:
+
+.isupper() = verifica se está tudo em maiusculo
+.islower() = verifica se está tudo em minusculo
+.isnumeric() = verifica se é um número
+.isalpha() = verifica se é uma letra
+.isalnum() = verifica se é alfa numérico
+.isprintable() =  verifica se ele pode ser impresso
+.isspace() = verifica se só tem espaços
 
 __________________________________________________________________________________

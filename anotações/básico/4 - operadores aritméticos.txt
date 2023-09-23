@@ -1,0 +1,81 @@
+                                 Operadores 
+__________________________________________________________________________________
+Operadores aritméticos:
+
+Operadores artiméticos servem para fazermos contas no python, e entre eles temos :
+
++ = adição                 ** = Potência
+- = subtração              // = divisão inteira
+* = multiplicação          % = Resto da divisão
+/ = divisão
+
+-----------------------------------------------
+Ordem de precêdencia
+
+1 - ()
+2 - ** 
+3 - * , /, //, % 
+4 - +, -
+
+----------------------------------------------------------------------------------
+Operadores de atribuição: 
+
+== : igual a
+!= : diferente de
+>= : maior ou igual a
+<= : menor ou igual a
+> = maior que
+< = menor que
+
+----------------------------------------------------------------------------------
+Operadores lógicos:
+
+and /  &  = retorna verdadeiro se todas as afirmações forem verdadeiras
+or / | = retorna verdadeiro se algumas das afirmações for verdadeira
+not = retorna falso se as afirmação for verdadeira
+
+----------------------------------------------------------------------------------
+Operadores de adesão:
+
+in = retorna True se uma sequencia com o valor especificado estiver no objeto
+not in = retorna true se uma sequencia com o valor especificado não estiver no objeto
+
+----------------------------------------------------------------------------------
+Operadores de bits:
+
+^ = define cada bit como 1 se apenas um dos dois bits for 1
+~ = inverte todos os bits
+<< = muda para a esquerda pressionando os 0 da direta
+>> = muda para direita pressionando os 0 da esquerda
+
+------------------------------------------------------------
+Numeros decimais em valores binários:
+
+ 0 = 0000000000000000
+ 1 = 0000000000000001
+ 2 = 0000000000000010
+ 3 = 0000000000000011
+ 4 = 0000000000000100
+ 5 = 0000000000000101
+ 6 = 0000000000000110
+ 7 = 0000000000000111
+ 8 = 0000000000001000
+ 9 = 0000000000001001
+10 = 0000000000001010
+11 = 0000000000001011
+12 = 0000000000001100
+
+>> = O operador >> move cada bit no número especificado de vezes para a direita. Os buracos vazios à esquerda são preenchidos com 0's.
+
+Se você mover cada bit 2 vezes para a direita, 8 se tornará 2: 
+8 = 0000000000001000 
+torna-se 
+2 = 0000000000000010
+------------------------------------------------------------
+O operador << insere o número especificado de 0 (neste caso, 2) da direita e move a mesma quantidade de bits mais à esquerda
+
+Se você pressionar 00 da esquerda:
+3 = 000000000000011 
+torna-se 
+12 = 0000000000001100
+__________________________________________________________________________________

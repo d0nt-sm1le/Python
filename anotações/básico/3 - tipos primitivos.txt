@@ -7,6 +7,7 @@ Tipos primitivos:
 String (str) = tudo que está entre " " : "olá, mundo" - "hello, world!"
 Int = todo número inteiro : 1 , 90 , 0 ,-5, 199999 e etc
 Float = todo número quebrado : 0.1 , 7.6 , -1.9 , 99999.0000
+complex = criação de números imaginarios : 3 + 5j , 6y, -7h
 Bool = true and false
 
 Mas também temos outros tipos que são bem úteis como :
