@@ -1,2 +1,3 @@
-x = "Manipulando nosso texto"
-print(x.startswith('Manipulando'))
+lista = ['stormstroopers', 'siths', 'empire']
+lista.copy()
+print(lista)
