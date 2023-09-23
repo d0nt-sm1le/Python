@@ -13,16 +13,6 @@ Regras gerais:
 5 - Um nome de uma váriavel não podem ser uma palavra chave do Pythom
 
 ----------------------------------------------------------------------------------
-Tipos primitivos:
-
-String (str) = tudo que está entre " " : "olá, mundo" - "hello, world!"
-Int = todo número inteiro : 1 , 90 , 0 ,-5, 199999 e etc
-Float = todo número quebrado : 0.1 , 7.6 , -1.9 , 99999.0000
-Bool = true and false
-
-(obs: use o comando "type(váriavel)" para ver o tipo primitivo de uma váriavel)
-
-----------------------------------------------------------------------------------
 Declarando váriaveis:
 
 Para declarar uma váriavel, só coloque o nome dela apartir das regras acima e atribua um valor a ela. Ex:

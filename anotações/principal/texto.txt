@@ -1,0 +1,73 @@
+                                  Texto
+__________________________________________________________________________________
+Comandos básicos:
+
+# = cria um comentário e anula qualquer comando quando colocado na frente
+"""  """ = cria um comentário de várias llinhas
+
+print("") = imprime uma mensagem na tela
+print(f"{váriavel}" = formata uma váriavel dentro do texto
+__________________________________________________________________________________
+Strings:
+
+Como em outras em outras linguagens, no Pyhton, cadeias de caracteres representam bytes que aprensentam caracteres unicode. Mas no Python não tem tipos de dados para caracteres! Então um caractere tem o comprimento de 0 a todos o resto de caracteres declaradas.ex
+
+x = "Olá, Mundo!"
+print(a[0])
+
+Oque aconteceu aqui é que o colchete chamou o caractere 0 da váriavel "x" e o print deu a saída do comando.
+
+------------------------------------------
+
+E se você quiser obter o comprimento da cadeia de caracteres, use o comando "len(váriavel)"
+
+a = "hello, world!"
+print(len(a))
+
+------------------------------------------
+
+Como cadeias de caracteres são matrizes, podemos fazer um loop através dos caracteres em uma cadeia de caracteres, com um loop "for". ex:
+
+for a in "world":
+  print(a)
+
+------------------------------------------
+Comandos gerais para cadeia de caracteres:
+ 
+                                 Fatiamento
+
+   M  a  n  i  p  u  l  a  n  d  o     n  o  s  s  o     t  e  x  t  o
+   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |    
+   0  1  2  3  4  5  6  7  8  9  10 11 12 13 14 15 16 17 18 19 20 21 22
+
+
+[] = chama os caracteres
+[12:16] = Chama os caracteres do 12 ao 16 mas exclui o 16
+[:11] = Chama os caracteres do 0 ao 11 mas como padrão exclui o 11.
+[11:] = Chama todos os caracteres do 11 para frente e exclui do 0-10
+[12:17:2] = Chama todos os caracteres do 12 ao 17 mas pulando 2 caracteres
+[12::3] = Chama todos os caracteres do 12 para frente mas pulando 3 caraceteres
+[-11:-7] = Chama todos os caracteres de 11 a 6 mas ao contrário (noss)
+
+len(a) = manda ver o comprimento de caracteres
+a.count('e') = manda ver quantas vezes o "e" aparece
+a.count('e',0,13) = manda ver quantas vezes o "e" aparece com fatiamento
+a.find('pulando') = manda ver quantas vezes os caracteres "pulando" aparece
+'nosso' in a = para ver se existe os caracteres "nosso" na váriavel
+
+.replace('nosso','seu') = troca os carateres "nosso" por "seu" mas não diretamente
+.upper() = todas os caracteres ficaram maiúsculas
+.casefold() = todas as caracteres ficaram minusculas
+.capitalize() = todos os caracteres ficaram com a primeira letra em maiuscla e o resto em minuscula
+.swapcase() = caracteres minusculos ficaram maiúsculos e vice versa
+.title() = verifica quantas palavras tem dentro da cadeia de caracteres
+.strip() = remove espaços desnecessarios 
+.rstrip() = remove espaços desnecessarios apenas da direta
+.lstrip() = remove espaços desnecessarios apenas na esquerda
+.format( = ) = formata um determinado valor ( normalmente pra váriaveis colocando {})
+.startswith(' ') = retorna true se a cadeia de caracteres começar com os caracteres entre aspas simples
+
+.split() = ocorre uma divisão onde existe espaços (cada palavra recebe uma nova indexsação)
+'-'.join(a) = faz uma junção de elementos de frases
+
+__________________________________________________________________________________

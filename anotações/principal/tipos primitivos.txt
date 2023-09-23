@@ -1,0 +1,39 @@
+                               Tipos Primitivos 
+__________________________________________________________________________________
+Tipos primitivos servem para darmos um tipo claro para uma váriavel , e usarmos ela da forma correta. Os principais tipos primitivos que usamos são :
+
+Tipos primitivos:
+
+String (str) = tudo que está entre " " : "olá, mundo" - "hello, world!"
+Int = todo número inteiro : 1 , 90 , 0 ,-5, 199999 e etc
+Float = todo número quebrado : 0.1 , 7.6 , -1.9 , 99999.0000
+Bool = true and false
+
+Mas também temos outros tipos que são bem úteis como :
+
+List = [" ", " ", " "] = para representar valores
+Tuple = ((" ", " ", " ")) = para representar registros
+Dict = (name="John", age=36) = conjunto de valores
+Bytes = b"Hello" = conjustos nulos de objetos
+
+
+E para descobrir qual tipo uma váriavel é, use o comando:
+
+type(váriavel)
+
+E tera de retorno o tipo da váriavel
+
+----------------------------------------------------------------------------------
+Conversão de tipos:
+
+Normalmente para converter váriaveis você pode criar outra váriavel com o mesmo tipo mas com a váriavel declarada:
+
+Int / float:
+
+x = 1
+y = 9.0
+
+a = float(x)
+b = int(y)
+
+__________________________________________________________________________________
