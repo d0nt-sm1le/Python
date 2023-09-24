@@ -1,8 +1,30 @@
                                  Listas 
 __________________________________________________________________________________
+Coleções no Python:
+
+Há quatro tipos de dados de coleção no python:
+
+1 - Listas = é uma coleção que ordenada mutável. Permite itens duplicados.
+2 - Tupla = é uma coleção ordenada e imutável. Permite itens duplicados.
+3 - Set = é uma coleção não ordenada, imutável e não indexada.Sem itens duplicados
+4 - Dicionário =  é uma coleção que é ordenada e mutável. Sem itens dublicados
+
+
+----------------------------------------------------------------------------------
+Listas:
+
 Listas são usadas para armazenar vários itens em uma única variável, sendo um dos 4 tipos do python usada para armazenar "coleções de dados".Para criar listas a gente declara uma váriavel e usa colchetes , ex:
 
 lista = ["stormstroopers", "siths", "empire"]
+print(lista)
+
+As listas podem ter valores iguais , elas podem ter qualquer tipo primitivo como strings, ints, floats e booleanos podendo conter também diferentes tipos primitivos em uma só lista.ex:
+
+lista1 = ["abc", 34, True, 40, "homem"]
+
+E assim sendo possivel usar o método "list()" para criar nova lista:
+
+lista = list(("jedis", "force", "republic"))
 print(lista)
 
 ---------------------------------------------
@@ -14,13 +36,13 @@ Uma lista ordenada , é aquela que os itens tem uma ordem definida, e essa ordem
 .clear() = remove todos os itens de uma lista
 .copy() = retorna uma cópia da lista
 .count("") = retorna o número de elementos com o valor especificado entre ""
-.extend() = 
-.index()
-.insert()
-.pop()
-.remove()
-.reverse() 
-.sort()
+.extend() = adiciona elementos de outra lista ( crie outra lista pra usar obvio)
+.index("") = retorna a posição de um determinado valor da lista
+.insert() = coloca um novo item a lista mais com uma posição especificada
+.pop() = remove elementos com a posição especificada
+.remove() = remove o item com o valor especificado
+.reverse() = reverte a ordem da lista
+.sort() = classifica a lista
 
-(você não coloca os métodos dentro do print ou alguma váriavel , você declara eles fora de um comando, com excessão do "copy()".)
+(obs: para usarr alguns , vocêe tem que colocar eles dentro de váriaveis)
 __________________________________________________________________________________
