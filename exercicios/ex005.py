@@ -10,6 +10,6 @@ elif media >= 5.0:
     print("O aluno ficou recuperação")
 elif media < 5.0:
     print(f"Tirando {nt} e {nt2}, a média do aluno é {media:.1f}")
-    print("O aluno foi reprrovado")
+    print("O aluno foi reprovado")
 else:
     print("Valor invalido , tente usar número quebrado como '7.8' e '5.0'")
