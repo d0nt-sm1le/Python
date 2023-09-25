@@ -2,59 +2,45 @@ from time import sleep
 import random
 
 print("Sua opções ")
-print("[ 1 ] Pedra\n[ 2 ] Papel\n[ 3 ] Tesoura")
+print("[ 0 ] Pedra\n[ 1 ] Papel\n[ 2 ] Tesoura")
 
-jogador = int(input("Qual é a sua jogada? "))
-pc = random.randint(1, 3)
+pl = int(input("Qual é a sua jogada? "))
+jogada = ('Pedra', 'Papel', 'Tesoura')
+pc = random.randint(0, 2)
 
-print("\nJO")
+print("JO")
 sleep(1)
 print("KEN")
 sleep(1)
-print("PO!\n")
+print("PO!")
 
-print("==" * 20)
+print("=-" * 20)
+print(f"O computador jogou {jogada[pc]}")
+print(f"O jogador jogou {jogada[pl]}")
+print("=-" * 20)
 
-if jogador == 1:
-    if pc == 1:
-        print("O computador escolheu Pedra \nO jogador escolher Pedra")
-        print("==" * 20)
-        print("EMPATE!")
+if pl == 0:
+    if pc == 0:
+        print("\033[33mEMPATE!\033[m")
 
-    elif pc == 2:
-        print("O computador escolhou Papel \nO jogador escolheu Pedra")
-        print("==" * 20)
-        print("O jogador PERDEU!")
-
-    else:
-        print("O computador escolheu Tesoura \nO jogador escolheu Pedra")
-        print("==" * 20)
-        print("O jogador VENCEU")
-elif jogador == 2:
-    if pc == 1:
-        print("O computador escolheu Pedra \nO jogador escolheu Papel")
-        print("==" * 20)
-        print("O jogador VENCEU!")
-
-    elif pc == 2:
-        print("O computador escolheu Papel \nO jogador escolheu Papel")
-        print("==" * 20)
-        print("EMPATE!")
+    elif pc == 1:
+        print("O jogador \033[31mPERDEU\033[m!")
 
     else:
-        print("O computador escolheu Tesoura \nO jogador escolheu Papel")
-        print("==" * 20)
-        print("O jogador PERDEU")
-elif jogador == 3:
-    if pc == 1:
-        print("O computador escolheu Pedra \nO jogador escolheu Tesoura")
-        print("==" * 20)
-        print("O jogador PERDEU")
-    elif pc == 2:
-        print("O computador escolheu Papel \nO jogador escolheu Tesoura")
-        print("==" * 20)
-        print("O jogador VENCEU")
+        print("O jogador \033[32mVENCEU\033[m!")
+elif pl == 1:
+    if pc == 0:
+        print("O jogador \033[32mVENCEU\033[m!")
+
+    elif pc == 1:
+        print("\33[33mEMPATE!\033[m")
+
     else:
-        print("O computador escolheu Tesoura \nO jogador escolheu Tesoura")
-        print("==" * 20)
-        print("EMPATE!")
+        print("O jogador \033[31mPERDEU\033[m")
+elif pl == 2:
+    if pc == 0:
+        print("O jogador \033[31mPERDEU\033[m")
+    elif pc == 1:
+        print("O jogador \033[32mVENCEU\033[m!")
+    else:
+        print("\033[33mEMPATE!\033[m")
