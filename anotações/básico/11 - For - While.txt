@@ -1,0 +1,16 @@
+                                For - While
+__________________________________________________________________________________
+For:
+
+O for serve para iterar sobre um sequência , ele cria repetições quantas vezes você quiser usando nas seguintes syntax:
+
+1 - for x in range(0, 4):
+    	print('oi')
+
+2 - for x in (váriavel):
+
+Na primeira syntax ele manda escrever "oi" vezes dado o print, o "x" é a váriavel de repetição onde você pode dar o nome que quiser, o "for x" significa "laço x" e "in range():" significa "no intervalo de ():" . "laço x no intervalo de(0,4):".
+
+E
+
+__________________________________________________________________________________
