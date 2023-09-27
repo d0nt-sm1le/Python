@@ -2,15 +2,113 @@
 __________________________________________________________________________________
 For:
 
-O for serve para iterar sobre um sequência , ele cria repetições quantas vezes você quiser usando nas seguintes syntax:
+O for serve para criar uma estrutura de loops com objetos iteráveis.Dentro deles armazenamos valores que vão ser repetido quantas vezes quiser! Essas estruturas de repetição funciona de modo que um valor vai ser colocado dentro de uma estrutura de repetição que armazena quantas números forem dados por você. ex:
 
-1 - for x in range(0, 4):
-    	print('oi')
+for x in "World!":
+    print(x)
 
-2 - for x in (váriavel):
+Oque acontece aqui , é o programa armazena a string "World!" dentro de um laço de repetição , então o resultado é igual a:
 
-Na primeira syntax ele manda escrever "oi" vezes dado o print, o "x" é a váriavel de repetição onde você pode dar o nome que quiser, o "for x" significa "laço x" e "in range():" significa "no intervalo de ():" . "laço x no intervalo de(0,4):".
+W
+o
+r
+l
+d
+!
 
-E
+Já que a váriavel vai considerar cada caractere um número. Do mesmo que fizermos:
+
+for x in range (0, 10):
+    print(x)
+
+---------------------------------------------
+Break:
+
+Com a função "Break", podesmo parar o loop antes que ele tenha percorra todos os números ou itens, ex:
+
+for x in range (0, 10):
+    print(x)
+    if x == 6:
+      break
+
+Então o resultado será:
+
+0
+1
+2
+3
+3
+4
+5
+
+Mas também podemos usar o if antes do print, para que a quebra seja feita antes da 
+impressão:
+
+for x in range (0, 10):
+    if x == 6:
+      break
+    print(x)
+
+então resultado será:
+
+0
+1
+2
+3
+4
+5
+    
+---------------------------------------------
+Continue:
+
+Com a função "continue" podemos fazer parar a iteração atual do loop e continuar com a próxima:
+
+for x in range(0, 10):
+  if x == 4:
+    continue
+  print(x)
+
+resultado:
+
+0
+1
+2
+3
+5
+6
+7
+8
+9
+10
+
+---------------------------------------------
+range():
+
+O "range()" retorna uma sequencia de número , começando do 0 , incrementa o 1 e termina um número especificado.
+
+for x in range(6):
+    print(x)
+
+resultado:
+
+0
+1
+2
+3
+4
+5
+
+E para corrigirmos o fato de só ir até o número 5 por considerar o 0 um número (obs: pra mim o 0 não é um número... .... não discuta ele não é -_-) podemos acrescenta + 1 para somar com o último número , ou colocar um número acima do que queremos.
+
+Com a iteração podemos fazer que o "for" pule números , tipo de 0 a 10 ele pular 10 números vai ser igual a : 0, 3, 6 e 9.ex:
+
+for x in range(0, 10, 3):
+    print(x)
+
+resultado:
+
+0
+3
+9
 
 __________________________________________________________________________________
