@@ -110,5 +110,20 @@ resultado:
 0
 3
 9
+----------------------------------------------------------------------------------
+While:
 
+Assim como o "for" , o "while" é um comando de loop , e a difença dele pro "for" é que ele só vai executar deis de a condição seja verdadeira. ex:
+
+i = 1
+while i < 6
+  print(i)
+  i += 1
+
+: Imprima "i" desde que ele seja menor que. obs: o "i += 1" é usado para que o while não fique printando infinitamente.
+
+---------------------------------------------
+Break , Continue , etc:
+
+Assim como no "for" a gente pode usar esses métodos , para quebrar a partir de um determinado momento ou continuar depois de um número , aplicando do mesmo jeito que no for.
 __________________________________________________________________________________
