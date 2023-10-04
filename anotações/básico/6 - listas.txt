@@ -1,26 +1,25 @@
                                  Listas 
 __________________________________________________________________________________
-Listas são usadas para armazenar vários itens em uma única variável, sendo um dos 4 tipos do python usada para armazenar "coleções de dados".Para criar listas a gente declara uma váriavel e usa colchetes , ex:
+Listas são usadas para armazenar vários itens em uma única variável, sendo um dos 3 tipos principais do python usada para armazenar "coleções de dados".Para criar listas a gente declara uma váriavel e usa colchetes , ex:
 
 lista = ["stormstroopers", "siths", "empire"]
 print(lista)
 
 ---------------------------------------------
-Listas ordernadas:
-
-Uma lista ordenada , é aquela que os itens tem uma ordem definida, e essa ordem não será alternada! Mas se você adicionar novos itens a uma lista , eles serão colocados no final da lista. E existem alguns métodos de lista que podem alterar a ordem ( mesmo em geral ela não será alterada ). E esses são:
+Métodos de lista:
 
 .append() = adiciona um elemento ao fim da lista
 .clear() = remove todos os itens de uma lista
 .copy() = retorna uma cópia da lista
 .count("") = retorna o número de elementos com o valor especificado entre ""
-.extend() = 
-.index()
-.insert()
-.pop()
-.remove()
-.reverse() 
-.sort()
+.extend() =  adiciona elementos de outra lista no final da atual 
+.index() = retorna o número de um elemento especificado de uma lista
+.insert() = coloca elementos dentro de uma lista com uma posição especificada
+.pop() = remove elementos de uma lista com a posição especificada []
+.remove() = remova um iten com o valor especificado ''
+.reverse() = reverte a ordem da lista
+.sort() = classifica a lista
+max() = maior número da lista(tuplas, dicionarios e etc)
+min() = menor número da lista(tuplas, dicionarios e etc)
 
-(você não coloca os métodos dentro do print ou alguma váriavel , você declara eles fora de um comando, com excessão do "copy()".)
 __________________________________________________________________________________

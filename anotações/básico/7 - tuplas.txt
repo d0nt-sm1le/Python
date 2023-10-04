@@ -1,0 +1,14 @@
+                                Tuplas
+__________________________________________________________________________________
+Tuplas tem a função de armazenar diversos itens , mas de forma imutavel.Para declarar uma tuplas faça a seguinte forma: 
+
+Primeiro a gente cria uma váriavel para armazenar o valor! Para especificar que é uma tupla a gente usa ().
+
+c = ()
+
+e depois colocamos o tipo primitivo da variavel que queremos como por exemplo:
+
+c = ('oi', 'ola', 'tchau')
+c = (True, False, True)
+c = (1, 2, 2, 3, 3)
+__________________________________________________________________________________
