@@ -13,12 +13,12 @@ Métodos de lista:
 .copy() = retorna uma cópia da lista
 .count("") = retorna o número de elementos com o valor especificado entre ""
 .extend() =  adiciona elementos de outra lista no final da atual 
-.index() = retorna o número de um elemento especificado de uma lista
+.index() = retorna a posição de um elemento especificado de uma lista
 .insert() = coloca elementos dentro de uma lista com uma posição especificada
 .pop() = remove elementos de uma lista com a posição especificada []
 .remove() = remova um iten com o valor especificado ''
 .reverse() = reverte a ordem da lista
-.sort() = classifica a lista
+.sort() = organiza a lista
 max() = maior número da lista(tuplas, dicionarios e etc)
 min() = menor número da lista(tuplas, dicionarios e etc)
 

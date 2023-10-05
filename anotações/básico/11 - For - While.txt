@@ -110,6 +110,47 @@ resultado:
 0
 3
 9
+
+---------------------------------------------
+enumerate():
+
+O enumarate serve para podermos fazer uma comparação elementos em uma lista , com a posição ou elemento de outra lista correspondente. O exemplo a seguir mostra a comparação da posição de elementos:
+
+n1 = [1, 2, 3, 4]
+
+for y, x enumerate(n1)
+    print(x, i)
+
+resul:
+
+0 1
+1 2 
+2 3
+3 4
+
+O y é a nossa váriavel de comparação e o x a nossa váriavel de repetição que guarda os valores n1. O próximo exemplo é de uma comparação com elementos de listas diferentes correspondentes:
+
+p = ['Posição', 'Posição']
+n = [1, 2]
+
+for i, x in enumerate(p):
+    print(x, n[i])
+
+O que acontece aqui é o i passa a "guardar" os valores da lista "n" e mostra correspondente as váriaveis:
+
+---------------------------------------------
+zip():
+
+O zip vai servir para mesclarmos essas duas váriaveis, do mesmo jeito do enumerate mas com a ordem da listas passadas inves das ordens do indices. Ex:
+
+p = ['Posição', 'Posição']
+n = [1, 2]
+
+for i, x in zip(p, n):
+    print(i, x)
+
+Ou seja , o indice "i" passa a receber os valores de "p" e o "x" de "n". Oque seria bem mais intuitivo em certos caso usar o "zip".
+
 ----------------------------------------------------------------------------------
 While:
 
