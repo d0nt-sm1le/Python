@@ -68,6 +68,7 @@ a.find('pulando') = manda ver quantas vezes os caracteres "pulando" aparece
 .lstrip() = remove espaços desnecessarios apenas na esquerda
 .format( = ) = formata um determinado valor ( normalmente pra váriaveis colocando {})
 .startswith(' ') = retorna true se a cadeia de caracteres começar com os caracteres entre aspas simples
+.index() = mostra a posição que um valor apareceu pela primeira vez
 
 .split() = ocorre uma divisão onde existe espaços (cada palavra recebe uma nova indexsação)
 '-'.join(a) = faz uma junção de elementos de frases
