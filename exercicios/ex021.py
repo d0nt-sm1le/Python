@@ -1,8 +1,6 @@
 from random import randint
 
-t1 = (randint(1, 9), randint(1, 9), randint(1, 9), randint(1, 9), randint(1, 9),)
+numeros = (randint(0, 9), randint(0, 9), randint(0, 9), randint(0, 9),)
 
-print("O analfabeto funcional , os resultados foram esses aqui: ", end="")
-for x in t1:
-    print(x, end=" ")
-print(f"\nO maior número sorteado foi {max(t1)}\nE o menor número sorteado foi {min(t1)}")
+print("Os números digitados foram:", numeros[0], numeros[1], numeros[2], numeros[3])
+print(f"O maior valor digitado foi: {max(numeros)}\nO menor valor digitado foi: {min(numeros)}")

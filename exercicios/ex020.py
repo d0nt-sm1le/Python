@@ -1,21 +1,10 @@
-ex = ('zero', 'um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'deis',
-      'onze', 'doze', 'treze', 'catorze', 'quinze', 'dezesseis', 'desessete', 'dezoito', 'dezenove', 'vinte')
+numeros = ('zero', 'um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'deiz', 'onze', 'doze',
+           'trese', 'catorse', 'quinze', 'desesseis', 'desessete', 'desoito', 'desenove', 'vinte')
 
-y = True
-
-while y:
-    n = int(input("Digite um número de 0 a 20: "))
-
-    if 0 <= n <= 20:
-        print(f"Você digitou o número {ex[n]}")
+while True:
+    n_p1 = int(input("Digite um valor de 0 a 20: "))
+    if 0 <= n_p1 <= 20:
+        print(f"O valor digitado foi {numeros[n_p1]}")
+        break
     else:
-        print("Tente novamente.", end=" ")
-
-    x = str(input("\nVocê quer continuar?[S/N] ")).lower()
-
-    if x == 's':
-        pass
-    elif x == 'n':
-        y = False
-    else:
-        print("tente novamente: ")
+        print("Valor incorreto, tente novamente.", end="")
