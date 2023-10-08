@@ -1,6 +1,5 @@
-from random import randint
-
-numeros = (randint(0, 9), randint(0, 9), randint(0, 9), randint(0, 9),)
-
-print("Os números digitados foram:", numeros[0], numeros[1], numeros[2], numeros[3])
-print(f"O maior valor digitado foi: {max(numeros)}\nO menor valor digitado foi: {min(numeros)}")
+cidade = str(input("Qual o seu nome completo? ")).strip().upper()
+if cidade.count("SILVA") == 1:
+    print("O seu nome tem silva?", True)
+else:
+    print("O seu nome tem silva?", False)

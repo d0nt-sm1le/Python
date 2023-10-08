@@ -66,7 +66,7 @@ a.find('pulando') = manda ver quantas vezes os caracteres "pulando" aparece
 .strip() = remove espaços desnecessarios 
 .rstrip() = remove espaços desnecessarios apenas da direta
 .lstrip() = remove espaços desnecessarios apenas na esquerda
-.format( = ) = formata um determinado valor ( normalmente pra váriaveis colocando {})
+.format() = formata um determinado valor ( normalmente pra váriaveis colocando {})
 .startswith(' ') = retorna true se a cadeia de caracteres começar com os caracteres entre aspas simples
 .index() = mostra a posição que um valor apareceu pela primeira vez
 

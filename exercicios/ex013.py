@@ -1,3 +1,3 @@
-n1 = int(input("Número: "))
-for x in range(1, 11):
-    print(f"{n1} x {x} = {x * n1}")
+salario = float(input("Qual é o salario do funcionario?R$ "))
+aumento = (salario / 100) * 15
+print(f"Um funcionario que ganha R${salario}, com 15% de aumento, passa a ganhar R${salario + aumento:.2f}")

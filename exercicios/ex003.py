@@ -1,9 +1,3 @@
-n1 = input("Digite um número: ")
-n2 = input("Digite um número: ")
-
-if n1 > n2:
-    print(f"O PRIMEIRO valor é maior")
-elif n1 < n2:
-    print(f"O SEGUNDO valor é maior")
-else:
-    print(f"Não existe um valor maior ou menor , os dois são IGUAIS!")
+n1 = int(input("Digite um número: "))
+n2 = int(input("Digite outro número: "))
+print(f"A soma entre {n1} e {n2} é igual a {n1 + n2}")

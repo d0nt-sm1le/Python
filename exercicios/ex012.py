@@ -1,7 +1,3 @@
-soma = 0
-cont = 0
-for x in range(1, 501, 2):
-    if x % 3 == 0:
-        cont = cont + 1
-        soma = soma + x
-print(soma)
+produto = float(input("Qual é o valor do produto?R$ "))
+desconto = (produto / 100) * 5
+print(f"Um produto que custava {produto}, com 5% de desconto passou a custar {produto - desconto:.2f}")

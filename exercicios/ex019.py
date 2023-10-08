@@ -1,8 +1,6 @@
-while True:
-    tabuada = int(input("Digite um número para ver a sua tabua: "))
-    if tabuada < 0:
-        break
-    print("--" * 20)
-    for x in range(1, 11):
-        print(f"{tabuada} x {x} = {tabuada * x}")
-    print("--" * 20)
+nome = str(input("Digite seu nome completo: "))
+print("Analisando seu nome...")
+print(f"Seu nome em letras maiusculas é {nome.upper()}")
+print(f"Seu nome em letras minusculas é {nome.lower()}")
+print(f"Seu nome tem no total {len(nome) - nome.count(' ')} letras")
+print(f"Seu primeiro nome é {nome.split()[0]} e tem {len(nome.split()[0])} letras")

@@ -1,6 +1,2 @@
-from time import sleep
-
-for x in range(10, 0, -1):
-    print(x)
-    sleep(1)
-print("BOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOM!!")
+din = float(input("Quanto dinheiro você tem na carteira?R$ "))
+print(f"Com {din} reais, você pode comprar US${din / 5.15:.2f}")

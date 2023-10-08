@@ -1,25 +1,4 @@
-from datetime import date
-
-idade = int(input("Ano de nascimento: "))
-ano = date.today().year
-re = ano - idade
-
-if re <= 9:
-    print(f"O atleta tem {re} ano(s)")
-    print(f"Classificação: MIRIM")
-
-elif re <= 14:
-    print(f"O atleta tem {re} ano(s)")
-    print(f"Classificação: INFANTIL")
-
-elif re <= 19:
-    print(f"O atleta tem {re} ano(s)")
-    print(f"Classificação: JÚNIOR")
-
-elif re <= 25:
-    print(f"O atleta tem {re} ano(s)")
-    print(f"Classificação: SÊNIOR")
-
-else:
-    print(f"O atleta tem {re} ano(s)")
-    print(f"Classificação: MASTER")
+nu1 = int(input("Digite um número: "))
+print(f"""O dobro de {nu1} é igual a {nu1 * 2}
+O triplo de {nu1} é igual a {nu1 * 3}
+A raiz quadrada de {nu1} é igual a {nu1 ** (1/2):.2f}""")
