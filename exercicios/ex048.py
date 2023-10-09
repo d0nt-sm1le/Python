@@ -1,27 +1,26 @@
-pessoas = list()
-dados = list()
-contagem = 0
+listaNomes = []
+listaPesos = []
 
 while True:
-    dados.append(str(input("Digite seu nome: ")))
-    dados.append(int(input("Digite seu peso: ")))
-    pessoas.append(dados[:])
-    dados.clear()
-    s = str(input("Deseja continuar?[S/N] ")).strip().lower()
-    if s == 'n':
+    nome = str(input('Nome: '))
+    listaNomes.append(nome)
+
+    peso = float(input('Peso (kg): '))
+    listaPesos.append(peso)
+
+    resp = str(input('Quer continuar? [S/N] ')).upper().strip()
+    if resp in 'Nn':
         break
-    else:
 
-        pass
-po = pessoas.index(max(pessoas))
-pe = pessoas.index(min(pessoas))
-print(f"Ao todo você cadatrou {len(pessoas[:][0])} pessoas")
-print(f"O maior peso foi de {max(pessoas[0:][0:])[1]}kg.",end="")
+print('_' * 40)
+print(f'Ao todo, você cadastrou {len(listaNomes)} pessoas')
+print(f'O(s) maior(es) peso(s) foi de {max(listaPesos)} kg de ', end='')
 
-if max(pessoas) in pessoas[:]:
-    print(f"Que é de {pessoas[po][0]}")
+for c, v in enumerate(listaPesos):
+    if v == max(listaPesos):
+        print(f'{listaNomes[c]}, ', end='')
 
-print(f"O maior peso foi de {min(pessoas[0:][0:])[1]}kg.",end="")
-
-if max(pessoas) in pessoas[:]:
-    print(f"Que é de {pessoas[pe][0]}")
+print(f'\nO(s) menor(es) peso(s) foi de {min(listaPesos)} kg de ', end='')
+for c, v in enumerate(listaPesos):
+    if v == min(listaPesos):
+        print(f'{listaNomes[c]}, ', end='')

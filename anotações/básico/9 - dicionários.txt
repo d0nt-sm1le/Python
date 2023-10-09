@@ -1,0 +1,30 @@
+                                  Dicionários
+__________________________________________________________________________________
+Dicionarios, assim como lista guardam valores que são mútaveis.Mas a diferença dela, é que podemos colocar identificadores para valores.Esses identificadores vão guardar os valores, e assim vamos poder chamar esse valores pelos identificadores.Ex
+
+pessoa = {'nome': 'João', 'idade': 23}
+print(pessoa['idade'])
+
+resu: 23
+
+Os identicadores são criados por ":" e separados por ",".
+----------------------------------------------------------------------------------
+Métodos de dicionários:
+Nos dicionarios não tem um método para adicionar um novo identificador, então fazemos da seguinte forma: 
+
+pessoa['sexo'] = "masculino"
+
+E tbm não temos .del(), então para excluir um identificador a gente faz da seguinte forma:
+
+del pessoa['idade']	
+
+-----------------------------------------------------------
+
+.value() = pega todos os valores do dicioario
+.keys() = pega todas os identificadores do dicionario
+.items() = mostra tanto os identificadores tanto os valores
+.copy() = para copiar o conteúdo(mesma coisa do [:] em lista)
+
+-----------------------------------------------------------
+E não tem enumerate.
+__________________________________________________________________________________

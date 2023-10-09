@@ -1,4 +1,4 @@
-dados = ['Pedro', 23]
-pessoas = list()
-pessoas.append(dados[:])
-print(pessoas[0])
+lista = [1]
+for x, y in enumerate(lista):
+    print(x)
+    print(y)
