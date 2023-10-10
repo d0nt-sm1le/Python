@@ -10,6 +10,7 @@ resu: 23
 Os identicadores são criados por ":" e separados por ",".
 ----------------------------------------------------------------------------------
 Métodos de dicionários:
+
 Nos dicionarios não tem um método para adicionar um novo identificador, então fazemos da seguinte forma: 
 
 pessoa['sexo'] = "masculino"
@@ -19,6 +20,7 @@ E tbm não temos .del(), então para excluir um identificador a gente faz da seg
 del pessoa['idade']	
 
 -----------------------------------------------------------
+Métodos: 
 
 .value() = pega todos os valores do dicioario
 .keys() = pega todas os identificadores do dicionario
@@ -26,5 +28,26 @@ del pessoa['idade']
 .copy() = para copiar o conteúdo(mesma coisa do [:] em lista)
 
 -----------------------------------------------------------
-E não tem enumerate.
+Enumerate: 
+
+E não tem enumerate.Você vai usar o própio dicionario como "enumarate" da seguinte forma:
+
+for k, v in dicionario.items(): 
+
+Oque aconetece aqui é , ele vai pegar todas as "Keys" e "Valores" de dicionario, já que o "dicionario.items()" está dando esse acesso, se você quiser dar só acesso as chaves você digita:
+
+for k in dicionario.keys()
+
+E para dar acessos só aos valores você digita:
+
+for v in dicionario.value()
+----------------------------------------------------------------------------------
+Comando: 
+
+Um comando especial e especifico para dicionarios , é um que vai organizar o items do seu dicionario em uma lista, para que assim fique em ordem crescente ou decrescente, dependendo do tipo dos valores do seu dicionario.
+
+
+dicionario = sorted(outro_dicionario.items(), key=itemgetter(1))
+
+Oque ele faz aqui é, atribuir ao valor "dicionario" a organização de "outro_dicionario", e achave vai ser key=itemgetter(1), ou seja se itemgetter for (0) ele vai organizar pelas "keys" e se for por (1) ele vai organizar pelos valores da chave.
 __________________________________________________________________________________
