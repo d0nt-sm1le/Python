@@ -1,0 +1,44 @@
+                                   Def
+__________________________________________________________________________________
+O def é um comando que cria funções com outras funções, a gente usa o def para caso tenhamos uma rotina ou códigos repetidos com algumas diferenças. Para criarmos uma função basta declararmos: 
+
+
+def func():
+    print('Hello, World!')
+
+e para chamarmos esse função usamos:
+
+func()
+
+resu:
+
+Hello, World!
+--------------------------------------
+Parametros:
+
+Um parametro serve para mudarmos alguma parte do código que seja diferente, mas que mesmo assim o outro código chamado do def seja parecido. Assim criamos:
+
+def pow(tiro):
+    print(tiro)
+
+pow("pow pow pow!")
+pow("piu piu piu!")
+
+Oque ele faz assim é : cria a função "pow()", e "pow()" recebe o parametro "(tiro)". Dentro do parametro "pow()" tem "print(tiro" ou seja "print(parametro)" assim quando chamarmos poderemos mudar esse paremetro tendo o resultado:
+
+pow pow pow!
+piu piu piu"
+
+--------------------------------------
+Empacotador:
+
+No python quando a gente tem um parametro com um número de valores indeterminados , usamos um empacotador para pegar todos esses valores, assim tudo oque o úsuario digitar será colocado dentro desse empacotador com por exemplo:
+
+def cont(*num)
+    x = len(núm)
+
+cont(1, 2, 4, 6, 54)
+cont(3, 2, 1)
+
+O * serve para identificar que o parametro é um empacotador, e esse empacotador vai guardar todos os valores do parameto.
+__________________________________________________________________________________
