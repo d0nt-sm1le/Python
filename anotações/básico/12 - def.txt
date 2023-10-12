@@ -13,6 +13,7 @@ func()
 resu:
 
 Hello, World!
+
 --------------------------------------
 Parametros:
 
@@ -30,6 +31,7 @@ pow pow pow!
 piu piu piu"
 
 --------------------------------------
+
 Empacotador:
 
 No python quando a gente tem um parametro com um número de valores indeterminados , usamos um empacotador para pegar todos esses valores, assim tudo oque o úsuario digitar será colocado dentro desse empacotador com por exemplo:
@@ -41,4 +43,30 @@ cont(1, 2, 4, 6, 54)
 cont(3, 2, 1)
 
 O * serve para identificar que o parametro é um empacotador, e esse empacotador vai guardar todos os valores do parameto.
+
+----------------------------------------------------------------------------------
+
+Docstrings:  
+
+Quando a gente cria uma função, outra pessoa vai mexer no nossso código, é de se imaginar que a pessoa não saiba oque aquela função faz , e é por isso que temos os doctstrings que serve parar uma manual para aquela função. Primeiramente, os comandos que temos parar podermos ver esses manuais são:
+
+help(função)
+
+ou
+
+print(função.__doc__)
+
+--------------------------------------
+
+Criando docstrings:
+
+Para criar uma dosctring, dentro do "def ()" colocamos o """ """, e dentro dessas aspas colocamos o manual explicando como e pra que aquela função serve:
+
+def leia():
+    """  
+     essa função tem o trabalho 
+     de guardar uma info.
+    """
+    algo = input("Digite algo: ")
+
 __________________________________________________________________________________
