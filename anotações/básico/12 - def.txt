@@ -44,6 +44,11 @@ cont(3, 2, 1)
 
 O * serve para identificar que o parametro é um empacotador, e esse empacotador vai guardar todos os valores do parameto.
 
+--------------------------------------
+Parametro opcional:
+
+Bom e sepor acaso alguma variavel do parametro não receber um valor, quando você declarar o def função(a, b, c), você pode declarar c = 0 para que não ocorra nenhum erro
+
 ----------------------------------------------------------------------------------
 
 Docstrings:  
@@ -68,5 +73,7 @@ def leia():
      de guardar uma info.
     """
     algo = input("Digite algo: ")
+
+---------------------------------------
 
 __________________________________________________________________________________

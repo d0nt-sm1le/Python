@@ -119,4 +119,20 @@ Esse segundo tipo de format usa um tipo ilimitado de argumentos e é colocado na
     print(vendas.format("2", "20", "1")
  
 Você pode ordenar a ordem com que você quer que apareça com o {0}, mas só funciona com váriaveis.
+
+----------------------------------------------------------------------------------
+Escopos de váriaveis:
+
+Quando criamos uma váriavel fora de algum tipo de função , essa váriavel é uma váriavel global, agora se temos uma váriavel quer é criada de de uma função, então essa váriavel é uma váriavel local. A gente pode atribuir váriaveis globais a variaveis locais, e assim podemos criar uma váriavel local que tenha o mesmo nome que uma váriavel global com o mesmo valor , sem alterar o valor inicial dessa váriavel global. 
+
+Assim se criarmos um "def função(c)" e criarmos uma váriavel "a = 20" e declaramos "c" como "a" então "c" é igual a 20.ex:
+
+def func(c):
+    print(c)
+
+a = 20
+func(a)
+
+Mas quando colocamos o comando global dessa função, então essa váriavel vira uma váriavel global como no ex-2.
+
 __________________________________________________________________________________
