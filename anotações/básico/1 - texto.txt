@@ -3,7 +3,7 @@ ________________________________________________________________________________
 Comandos básicos:
 
 # = cria um comentário e anula qualquer comando quando colocado na frente
-"""  """ = cria um comentário de várias llinhas
+"""  """ = cria um comentário de várias linhas
 end=" " = desfaz uma quebra de linha com oque estiver entre aspas
 \n = faz uma quebra de linha
 
@@ -15,7 +15,7 @@ Strings:
 Como em outras em outras linguagens, no Pyhton, cadeias de caracteres representam bytes que aprensentam caracteres unicode. Mas no Python não tem tipos de dados para caracteres! Então um caractere tem o comprimento de 0 a todos o resto de caracteres declaradas.ex
 
 x = "Olá, Mundo!"
-print(a[0])
+print(x[0])
 
 Oque aconteceu aqui é que o colchete chamou o caractere 0 da váriavel "x" e o print deu a saída do comando.
 
