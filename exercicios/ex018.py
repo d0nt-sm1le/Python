@@ -4,3 +4,4 @@ print('O número {} possui, {} milhares.'.format(n, n2[1]))
 print('O número {} possui, {} centenas. '.format(n, n2[2]))
 print('O número {} possui, {} dezenas. '.format(n, n2[3]))
 print('O número {} possui, {} unidades.'.format(n, n2[4]))
+
