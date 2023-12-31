@@ -2,12 +2,16 @@
 __________________________________________________________________________________
 Condições:
 
-No python a gente usa as condições para dar instruções especificas, usando os operadores, e principalmente os operadores de atribuições. Em ordem , a primeira condição que a gente usa é o "if" que signfica "se", e em um modo geral ela é usada em comparação! Um exemplo prático seria :
+No python a gente usa as condições para dar instruções especificas, usando os 
+operadores, e principalmente os operadores de atribuições. Em ordem , a primeira 
+condição que a gente usa é o "if" que signfica "se", e em um modo geral ela é usada
+ em comparação! Um exemplo prático seria :
 
 if 1 < 2:
    print("1 é menor que 2")
 
-E para finalizar essa condição a gente usa o else, mas caso o resultado tenha mais de 2 possiveis de tipos de resultados , a gente usa o elif. ex:
+E para finalizar essa condição a gente usa o else, mas caso o resultado tenha 
+mais de 2 possiveis de tipos de resultados , a gente usa o elif. ex:
 
 x = 1
 y = 2
@@ -19,9 +23,12 @@ elif x > y:
 else:
     print("agora sim")
 
-Então oque ele fez aqui foi verificar se x(1) é igual a y(2), se ele não é então ele verifica se x(1) é igual a y(2) oque obviamente não é verdade então ele executa o else como verdadeiro.
+Então oque ele fez aqui foi verificar se x(1) é igual a y(2), se ele não é então
+ele verifica se x(1) é igual a y(2) oque obviamente não é verdade então ele 
+executa o else como verdadeiro.
 
-E então por ultimo, deu para entender que o "else" captura qualquer coisa que não foi capturada pelas condições anteriores.
+E então por ultimo, deu para entender que o "else" captura qualquer coisa que não
+foi capturada pelas condições anteriores.
 
 ----------------------------------------------------------------------------------
 Encurtando:
@@ -31,21 +38,26 @@ prático se a gente colocar tudo na mesma linha.ex:
 
 - print("True") if 1 > 2 else print("False")
 
-Então ele lê da seguinte forma: escreva(print) "True", SE(if) 1 for maior que (>) 2 , se não(else) escreva "False". E sendo assim , por mais que não seja muito prático , você pode colocar várias condições na mesma linha:
+Então ele lê da seguinte forma: escreva(print) "True", SE(if) 1 for maior que (>) 2,
+ se não(else) escreva "False". E sendo assim , por mais que não seja muito prático,
+ você pode colocar várias condições na mesma linha:
 
 - print("true") if 1 > 2 else print("False") if 1 == 2 else print("false")
 
-então ele diz: escreva "true" se 1 for maior que dois , senão escreva "false", mas escreva isso se 1 for igual a 2 , se não escreva "false".
+então ele diz: escreva "true" se 1 for maior que dois , senão escreva "false", 
+mas escreva isso se 1 for igual a 2 , se não escreva "false".
 
 ----------------------------------------------------------------------------------
 Operadores lógicos: 
 
-Podemos usar operadores lógicos como todos os restos dos operadores para definir se a condição vai ser verdade ou não. E entre esse operadores temos o "and" , "or", "not".
+Podemos usar operadores lógicos como todos os restos dos operadores para definir se a
+condição vai ser verdade ou não. E entre esse operadores temos o "and" , "or", "not".
 
 -------------------------------------------------
 And:
 
-Então temos o "and" que só vai deixar que os comandos seja executado SE AS DUAS OU MAIS FOREM VERDADES.ex:
+Então temos o "and" que só vai deixar que os comandos seja executado SE AS DUAS 
+OU MAIS FOREM VERDADES. ex:
 
 -if 1 < 2 and 1 != 2:
     print("1 é menor que 2 e tem um valor diferente de 2!")
@@ -85,7 +97,8 @@ if 10 > 1:
 ----------------------------------------------------------------------------------
 Pass:
 
-Se por algum motivo do destino , você não precise ou não queira colocar uma instrução dentro dos if's e elif's, coloque a instrução "pass" dentro deles.
+Se por algum motivo do destino , você não precise ou não queira colocar uma
+ instrução dentro dos if's e elif's, coloque a instrução "pass" dentro deles.
 
 if 1 >= 2:
     pass

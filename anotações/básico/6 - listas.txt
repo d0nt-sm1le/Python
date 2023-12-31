@@ -1,6 +1,8 @@
                                  Listas 
 __________________________________________________________________________________
-Listas são usadas para armazenar vários itens em uma única variável, sendo um dos 3 tipos principais do python usada para armazenar "coleções de dados".Para criar listas a gente declara uma váriavel e usa colchetes , ex:
+Listas são usadas para armazenar vários itens em uma única variável, sendo um 
+dos 3 tipos principais do python usada para armazenar "coleções de dados". Para 
+criar listas a gente declara uma váriavel e usa colchetes , ex:
 
 lista = ["stormstroopers", "siths", "empire"]
 print(lista)

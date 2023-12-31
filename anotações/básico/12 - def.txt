@@ -1,6 +1,8 @@
                                    Def
 __________________________________________________________________________________
-O def é um comando que cria funções com outras funções, a gente usa o def para caso tenhamos uma rotina ou códigos repetidos com algumas diferenças. Para criarmos uma função basta declararmos: 
+O def é um comando que cria funções com outras funções, a gente usa o def para
+caso tenhamos uma rotina ou códigos repetidos com algumas diferenças. Para 
+criarmos uma função basta declararmos: 
 
 
 def func():
@@ -17,7 +19,8 @@ Hello, World!
 --------------------------------------
 Parametros:
 
-Um parametro serve para mudarmos alguma parte do código que seja diferente, mas que mesmo assim o outro código chamado do def seja parecido. Assim criamos:
+Um parametro serve para mudarmos alguma parte do código que seja diferente, 
+mas que mesmo assim o outro código chamado do def seja parecido. Assim criamos:
 
 def pow(tiro):
     print(tiro)
@@ -28,13 +31,15 @@ pow("piu piu piu!")
 Oque ele faz assim é : cria a função "pow()", e "pow()" recebe o parametro "(tiro)". Dentro do parametro "pow()" tem "print(tiro" ou seja "print(parametro)" assim quando chamarmos poderemos mudar esse paremetro tendo o resultado:
 
 pow pow pow!
-piu piu piu"
+piu piu piu
 
 --------------------------------------
 
 Empacotador:
 
-No python quando a gente tem um parametro com um número de valores indeterminados , usamos um empacotador para pegar todos esses valores, assim tudo oque o úsuario digitar será colocado dentro desse empacotador com por exemplo:
+No python quando a gente tem um parametro com um número de valores indeterminados,
+usamos um empacotador para pegar todos esses valores, assim tudo oque o úsuario 
+digitar será colocado dentro desse empacotador com por exemplo:
 
 def cont(*num)
     x = len(núm)
@@ -42,18 +47,24 @@ def cont(*num)
 cont(1, 2, 4, 6, 54)
 cont(3, 2, 1)
 
-O * serve para identificar que o parametro é um empacotador, e esse empacotador vai guardar todos os valores do parameto.
+O * serve para identificar que o parametro é um empacotador, e esse empacotador 
+vai guardar todos os valores do parameto.
 
 --------------------------------------
 Parametro opcional:
 
-Bom e sepor acaso alguma variavel do parametro não receber um valor, quando você declarar o def função(a, b, c), você pode declarar c = 0 para que não ocorra nenhum erro
+Bom e sepor acaso alguma variavel do parametro não receber um valor, quando você 
+declarar o def função(a, b, c), você pode declarar c = 0 para que não ocorra 
+nenhum erro
 
 ----------------------------------------------------------------------------------
 
 Docstrings:  
 
-Quando a gente cria uma função, outra pessoa vai mexer no nossso código, é de se imaginar que a pessoa não saiba oque aquela função faz , e é por isso que temos os doctstrings que serve parar uma manual para aquela função. Primeiramente, os comandos que temos parar podermos ver esses manuais são:
+Quando a gente cria uma função, outra pessoa vai mexer no nossso código, é de se 
+imaginar que a pessoa não saiba oque aquela função faz , e é por isso que temos 
+os doctstrings que serve parar uma manual para aquela função. Primeiramente, os 
+comandos que temos parar podermos ver esses manuais são:
 
 help(função)
 
@@ -65,7 +76,8 @@ print(função.__doc__)
 
 Criando docstrings:
 
-Para criar uma dosctring, dentro do "def ()" colocamos o """ """, e dentro dessas aspas colocamos o manual explicando como e pra que aquela função serve:
+Para criar uma dosctring, dentro do "def ()" colocamos o """ """, e dentro 
+dessas aspas colocamos o manual explicando como e pra que aquela função serve:
 
 def leia():
     """  
@@ -73,7 +85,4 @@ def leia():
      de guardar uma info.
     """
     algo = input("Digite algo: ")
-
----------------------------------------
-
 __________________________________________________________________________________

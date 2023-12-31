@@ -1,12 +1,19 @@
                                    Import 
 __________________________________________________________________________________
-O import no python serve para pegarmos comando e módulos de bibliotecas de fora , que nos ajudam a realizar uma tarefa mais fácil ou traz comandos que originalmente não tem no python e que precisamos. Um exemplo disso é a biblioteca "math" que nos traz comandos que resolvem equações matematicas, tanto complexas quanto mais simples como raiz quadrada. Para chamar uma biblioteca a gente usa o método "import", ex:
+O import no python serve para pegarmos comando e módulos de bibliotecas de fora ,
+ que nos ajudam a realizar uma tarefa mais fácil ou traz comandos que originalmente 
+não tem no python e que precisamos. Um exemplo disso é a biblioteca "math" que nos
+ traz comandos que resolvem equações matematicas, tanto complexas quanto mais
+ simples como raiz quadrada. Para chamar uma biblioteca a gente usa o método 
+"import", ex:
 
 import math
 
-Assim ele trará todos os comandos da biblioteca "math" para dentro do seu código. Mas se quiser especificar uma biblioteca , use o " from ".ex:
+Assim ele trará todos os comandos da biblioteca "math" para dentro do seu código.
+Mas se quiser especificar uma biblioteca , use o " from ".ex:
 
 from math import sqrt
 
-Aqui ele estara importando apena o comando "sqrt" da biblioteca math. E você pode achar várias bibliotecas acessando : https://docs.python.org/3/library/index.html
+Aqui ele estara importando apena o comando "sqrt" da biblioteca math. E você pode
+ achar várias bibliotecas acessando : https://docs.python.org/3/library/index.html
 __________________________________________________________________________________

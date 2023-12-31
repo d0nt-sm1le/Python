@@ -2,12 +2,16 @@
 __________________________________________________________________________________
 For:
 
-O for serve para criar uma estrutura de loops com objetos iteráveis.Dentro deles armazenamos valores que vão ser repetido quantas vezes quiser! Essas estruturas de repetição funciona de modo que um valor vai ser colocado dentro de uma estrutura de repetição que armazena quantas números forem dados por você. ex:
+O for serve para criar uma estrutura de loops com objetos iteráveis.Dentro deles 
+armazenamos valores que vão ser repetido quantas vezes quiser! Essas estruturas
+de repetição funciona de modo que um valor vai ser colocado dentro de uma estrutura
+de repetição que armazena quantas números forem dados por você. ex:
 
 for x in "World!":
     print(x)
 
-Oque acontece aqui , é o programa armazena a string "World!" dentro de um laço de repetição , então o resultado é igual a:
+Oque acontece aqui , é o programa armazena a string "World!" dentro de um laço de repetição,
+então o resultado é igual a:
 
 W
 o
@@ -24,7 +28,8 @@ for x in range (0, 10):
 ---------------------------------------------
 Break:
 
-Com a função "Break", podesmo parar o loop antes que ele tenha percorra todos os números ou itens, ex:
+Com a função "Break", podesmo parar o loop antes que ele tenha percorra todos os
+números ou itens, ex:
 
 for x in range (0, 10):
     print(x)
@@ -41,7 +46,7 @@ Então o resultado será:
 4
 5
 
-Mas também podemos usar o if antes do print, para que a quebra seja feita antes da 
+Mas também podemos usar o if antes do print, para que a quebra seja feita antes da
 impressão:
 
 for x in range (0, 10):
@@ -61,7 +66,8 @@ então resultado será:
 ---------------------------------------------
 Continue:
 
-Com a função "continue" podemos fazer parar a iteração atual do loop e continuar com a próxima:
+Com a função "continue" podemos fazer parar a iteração atual do loop e continuar
+com a próxima:
 
 for x in range(0, 10):
   if x == 4:
@@ -84,7 +90,8 @@ resultado:
 ---------------------------------------------
 range():
 
-O "range()" retorna uma sequencia de número , começando do 0 , incrementa o 1 e termina um número especificado.
+O "range()" retorna uma sequencia de número , começando do 0 , incrementa o 1 e 
+termina um número especificado.
 
 for x in range(6):
     print(x)
@@ -98,9 +105,13 @@ resultado:
 4
 5
 
-E para corrigirmos o fato de só ir até o número 5 por considerar o 0 um número (obs: pra mim o 0 não é um número... .... não discuta ele não é -_-) podemos acrescenta + 1 para somar com o último número , ou colocar um número acima do que queremos.
+E para corrigirmos o fato de só ir até o número 5 por considerar o 0 um número 
+(obs: pra mim o 0 não é um número... .... não discuta ele não é -_-) podemos 
+acrescenta + 1 para somar com o último número , ou colocar um número acima do 
+que queremos.
 
-Com a iteração podemos fazer que o "for" pule números , tipo de 0 a 10 ele pular 10 números vai ser igual a : 0, 3, 6 e 9.ex:
+Com a iteração podemos fazer que o "for" pule números , tipo de 0 a 10 ele pular 
+10 números vai ser igual a : 0, 3, 6 e 9.ex:
 
 for x in range(0, 10, 3):
     print(x)
@@ -114,7 +125,9 @@ resultado:
 ---------------------------------------------
 enumerate():
 
-O enumarate serve para podermos fazer uma comparação elementos em uma lista , com a posição ou elemento de outra lista correspondente. O exemplo a seguir mostra a comparação da posição de elementos:
+O enumarate serve para podermos fazer uma comparação elementos em uma lista,
+com a posição ou elemento de outra lista correspondente. O exemplo a seguir mostra
+a comparação da posição de elementos:
 
 n1 = [1, 2, 3, 4]
 
@@ -128,7 +141,9 @@ resul:
 2 3
 3 4
 
-O y é a nossa váriavel de comparação e o x a nossa váriavel de repetição que guarda os valores n1. O próximo exemplo é de uma comparação com elementos de listas diferentes correspondentes:
+O y é a nossa váriavel de comparação e o x a nossa váriavel de repetição que 
+guarda os valores n1. O próximo exemplo é de uma comparação com elementos de 
+listas diferentes correspondentes:
 
 p = ['Posição', 'Posição']
 n = [1, 2]
@@ -136,12 +151,14 @@ n = [1, 2]
 for i, x in enumerate(p):
     print(x, n[i])
 
-O que acontece aqui é o i passa a "guardar" os valores da lista "n" e mostra correspondente as váriaveis:
+O que acontece aqui é o i passa a "guardar" os valores da lista "n" e mostra 
+correspondente as váriaveis:
 
 ---------------------------------------------
 zip():
 
-O zip vai servir para mesclarmos essas duas váriaveis, do mesmo jeito do enumerate mas com a ordem da listas passadas inves das ordens do indices. Ex:
+O zip vai servir para mesclarmos essas duas váriaveis, do mesmo jeito do 
+enumerate mas com a ordem da listas passadas inves das ordens do indices. Ex:
 
 p = ['Posição', 'Posição']
 n = [1, 2]
@@ -149,22 +166,27 @@ n = [1, 2]
 for i, x in zip(p, n):
     print(i, x)
 
-Ou seja , o indice "i" passa a receber os valores de "p" e o "x" de "n". Oque seria bem mais intuitivo em certos caso usar o "zip".
+Ou seja , o indice "i" passa a receber os valores de "p" e o "x" de "n". 
+Oque seria bem mais intuitivo em certos caso usar o "zip".
 
 ----------------------------------------------------------------------------------
 While:
 
-Assim como o "for" , o "while" é um comando de loop , e a difença dele pro "for" é que ele só vai executar deis de a condição seja verdadeira. ex:
+Assim como o "for" , o "while" é um comando de loop , e a difença dele pro "for" é
+que ele só vai executar deis de a condição seja verdadeira. ex:
 
 i = 1
 while i < 6
   print(i)
   i += 1
 
-: Imprima "i" desde que ele seja menor que. obs: o "i += 1" é usado para que o while não fique printando infinitamente.
+: Imprima "i" desde que ele seja menor que. obs: o "i += 1" é usado para que o 
+while não fique printando infinitamente.
 
 ---------------------------------------------
 Break , Continue , etc:
 
-Assim como no "for" a gente pode usar esses métodos , para quebrar a partir de um determinado momento ou continuar depois de um número , aplicando do mesmo jeito que no for.
+Assim como no "for" a gente pode usar esses métodos , para quebrar a partir de 
+um determinado momento ou continuar depois de um número , aplicando do mesmo
+jeito que no for.
 __________________________________________________________________________________
